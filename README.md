@@ -18,5 +18,6 @@ chmod +x patch_awvs
 ./patch_awvs
 rm -rf /tmp/acu*
 service acunetix_trial restart
+chattr +i /home/acunetix/.acunetix_trial/data/license/license_info.json
 curl -k https://127.0.0.1:13443
 ```
